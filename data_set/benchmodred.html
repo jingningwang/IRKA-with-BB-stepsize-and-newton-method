@@ -1,0 +1,249 @@
+<h3>Benchmark Examples for Model Reduction</h3><P>
+<hr noshade color="#666666">
+
+<h4>Benchmark Examples for Model Reduction
+  of Linear Time Invariant Dynamical Systems</h4>
+
+<p>
+This benchmark collection contains several "real world" examples, reflecting current problems in applications,
+which can be used to test the numerical methods for model reduction.<br>
+<p>
+The examples are stored as compressed MATLAB MAT files.
+
+<p>Each MAT data file contains part or all of the matrices 
+<b> <i>A</i>, <i>B</i>, <i>C</i>, <i>D</i>   </b>  and <b> <i>E</i></b>
+for descriptor systems:
+
+<br><br><i>
+   <b>
+   Edx(t)/dt = Ax(t) + Bu(t),<br>
+     y(t) = Cx(t) + Du(t)</b></i><br><br>
+
+If  <b><i>D</i>, <i>C</i> </b> or
+    <b><i>E</i></b> are missing, it means that 
+    <b><i>D=0</i>, <i>C=B<sup>T</sup></i></b> or <b><i>E=I</i></b>, respectively. 
+<p>
+Some files contain a vector of the Hankel singular values, <i><b>hsv</b></i>, a frequency 
+vector, <i><b>w</b></i>, and the corresponding frequency response, <i><b>mag</b></i>. 
+When the controllability and the observability Gramians are positive definite, 
+the data files contain two matrices, <i><b>S</b></i> and <b><i>R</i></b>, which 
+are the Cholesky factors of the Gramians, rather than the Gramians themselves 
+(for more details see the <a href="../SLICOT-Reports/SLWN2002-2.pdf">report</a>).
+If there are several gramians for SISO subsystems, they are denoted with subscripts.
+<div align="Left">
+There are three kinds of models: dense models, sparse models and second
+order models (see the <a href="../SLICOT-Reports/SLWN2002-2.pdf">report</a>
+for a detailed description of each one).<br>
+<p>
+The following table gives the data files with a short description.<br>
+ 
+<br><br>
+
+<table cellpadding="2" cellspacing="1" border="2" width="740" align="Center">
+<tbody>
+<tr>
+  <td valign="Middle" align="Center" width="162"><b>data</b></td>
+  <td valign="Middle" align="Center" width="105"><b>name of file</b></td>
+  <td valign="Middle" align="Center" width="205"><b>&nbsp;description</b></td>
+  <td valign="Middle" align="Center" width="69"><b>&nbsp;order N</b></td>
+  <td valign="Middle" align="Center" width="70"><b>inputs m</b></td>
+  <td valign="Middle" align="Center" width="75"><b>outputs p</b></td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Eady example</ahref></td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="eady.mat">
+             eady.mat</a></td>
+  <td valign="Middle" align="Center" width="205">model of an atmospheric storm track</td>
+  <td valign="Middle" align="Center" width="69">598</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Transmission line model</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="tline.mat">
+             tline.mat</ahref></a></td>
+  <td valign="Middle" align="Center" width="205">example of a transmission line model</td>
+  <td valign="Middle" align="Center" width="69"> 256</td>
+  <td valign="Middle" align="Center" width="70">2</td>
+  <td valign="Middle" align="Center" width="75">2</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">CD player</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="CDplayer.mat">
+             CDplayer.mat</a></td>
+  <td valign="Middle" align="Center" width="205">classical CD player model</td>
+  <td valign="Middle" align="Center" width="69">120</td>
+  <td valign="Middle" align="Center" width="70">2</td>
+  <td valign="Middle" align="Center" width="75">2</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">PEEC model</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="peec.mat">
+             peec.mat</a></td>
+  <td valign="Middle" align="Center" width="205">partial element equivalent circuit model</td>
+  <td valign="Middle" align="Center" width="69">480</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">FOM model</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="fom.mat"> 
+             fom.mat</a></td>
+  <td valign="Middle" align="Center" width="205">block-diagonal model</td>
+  <td valign="Middle" align="Center" width="69">1006</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Random example</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="random.mat">
+             random.mat</a></td>
+  <td valign="Middle" align="Center" width="205">random model</td>
+  <td valign="Middle" align="Center" width="69">200</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">PDE example</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="pde.mat">
+             pde.mat</a></td>
+  <td valign="Middle" align="Center" width="205">partial differential equation</td>
+  <td valign="Middle" align="Center" width="69">84</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Heat equation (continuous case)</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="heat-cont.mat">
+             heat-cont.mat</a></td>
+  <td valign="Middle" align="Center" width="205">heat equation  in a thin rod</td>
+  <td valign="Middle" align="Center" width="69">200</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Heat equation (discrete case)</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="heat-disc.mat">
+             heat-disc.mat</a></td>
+  <td valign="Middle" align="Center" width="205">discretization of the 
+             previous equation</td>
+  <td valign="Middle" align="Center" width="69">200</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Orr-Somerfeld example</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="Orr-Som.mat">
+             Orr-Som.mat</a></td>
+  <td valign="Middle" align="Center" width="205">Orr-Sommerfeld operator <br>
+             for Couette flow</td>
+  <td valign="Middle" align="Center" width="69">200</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">MNA example - 1</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="MNA_1.mat">
+             MNA_1.mat</a></td>
+  <td valign="Middle" align="Center" width="205">Modified Nodal Analysis model</td>
+  <td valign="Middle" align="Center" width="69">578</td>
+  <td valign="Middle" align="Center" width="70">9</td>
+  <td valign="Middle" align="Center" width="75">9</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">MNA example - 2</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="MNA_2.mat">
+             MNA_2.mat</a></td>
+  <td valign="Middle" align="Center" width="205">"</td>
+  <td valign="Middle" align="Center" width="69">9223</td>
+  <td valign="Middle" align="Center" width="70">18</td>
+  <td valign="Middle" align="Center" width="75">18</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">MNA example - 3</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="MNA_3.mat">
+             MNA_3.mat</a></td>
+  <td valign="Middle" align="Center" width="205">"</td>
+  <td valign="Middle" align="Center" width="69">4863</td>
+  <td valign="Middle" align="Center" width="70">22</td>
+  <td valign="Middle" align="Center" width="75">22</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">MNA example - 4</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="MNA_4.mat">
+             MNA_4.mat</a></td>
+  <td valign="Middle" align="Center" width="205">"</td>
+  <td valign="Middle" align="Center" width="69">980</td>
+  <td valign="Middle" align="Center" width="70">4</td>
+  <td valign="Middle" align="Center" width="75">4</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">MNA example - 5</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="MNA_5.mat">
+             MNA_5.mat</a></td>
+  <td valign="Middle" align="Center" width="205">"</td>
+  <td valign="Middle" align="Center" width="69">10913</td>
+  <td valign="Middle" align="Center" width="70">9</td>
+  <td valign="Middle" align="Center" width="75">9</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">International space station</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="iss.mat">
+             iss.mat</a></td>
+  <td valign="Middle" align="Center" width="205">component 1r of the 
+             International Space Station</td>
+  <td valign="Middle" align="Center" width="69">270</td>
+  <td valign="Middle" align="Center" width="70">3</td>
+  <td valign="Middle" align="Center" width="75">3</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Building model</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="build.mat">
+             build.mat</a></td>
+  <td valign="Middle" align="Center" width="205">motion problem in a building</td>
+  <td valign="Middle" align="Center" width="69">48</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+<tr>
+  <td valign="Middle" align="Center" width="162">Clamped beam model</td>
+  <td valign="Middle" align="Center" width="105"><a 
+             href="beam.mat">
+             beam.mat</a></td>
+  <td valign="Middle" align="Center" width="205">Clamped beam model</td>
+  <td valign="Middle" align="Center" width="69">348</td>
+  <td valign="Middle" align="Center" width="70">1</td>
+  <td valign="Middle" align="Center" width="75">1</td>
+</tr>
+</table>
+<br><br>
+
+<hr noshade color="#666666">
+
+<h4>Available Reports</h4>
+
+1. <i>Younès Chahlaoui and Paul Van Dooren: </i><a href="../SLICOT-Reports/SLWN2002-2.pdf">A 
+collection of benchmark examples for model reduction of linear time invariant 
+dynamical systems</a>; SLICOT Working Note 2002-2: February 2002.
+<br><br>
+                                 
+<hr noshade color="#666666">
+
+
